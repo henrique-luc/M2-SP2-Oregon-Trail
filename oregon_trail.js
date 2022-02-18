@@ -5,6 +5,16 @@ class Traveler {
         this._isHealthy = true;
     }
 
+    get name(){
+        return this._name
+    }
+
+    set name(novoNome){
+        if(typeof novoNome === 'string'){
+            this._name = novoNome
+        }
+    }
+
     hunt(){
         
         this._food += 2;
