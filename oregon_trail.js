@@ -38,6 +38,16 @@ class Wagon {
         this._passengers = [];
     }
 
+    get capacity(){
+        return this._capacity;
+    }
+
+    set capacity(novaCapacidade){
+        if(typeof novaCapacidade === 'number'){
+            this._capacity = novaCapacidade
+        }
+    }
+
     getAvailableSeatCount(){
        return this._capacity - this._passengers.length
         
