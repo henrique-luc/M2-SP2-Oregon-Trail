@@ -6,13 +6,29 @@ class Traveler {
     }
 
     get name(){
-        return this._name
+        return this._name;
     }
 
     set name(novoNome){
         if(typeof novoNome === 'string'){
-            this._name = novoNome
+            this._name = novoNome;
         }
+    }
+
+    get food(){
+        return this._food;
+    }
+
+    set food(novoFood){
+        this._food = novoFood;
+    }
+
+    get isHealthy(){
+        return this._isHealthy;
+    }
+
+    set isHealthy(novoIsHealthy){
+        this._isHealthy = novoIsHealthy;
     }
 
     hunt(){
@@ -46,6 +62,14 @@ class Wagon {
         if(typeof novaCapacidade === 'number'){
             this._capacity = novaCapacidade
         }
+    }
+
+    get passengers(){
+        return this._passengers;
+    }
+
+    set passengers(novoPassenger){
+        this._passengers = novoPassenger;
     }
 
     getAvailableSeatCount(){
